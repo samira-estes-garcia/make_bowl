@@ -1,13 +1,13 @@
 class IngredientsController < ApplicationController
 
     def index
-        ingredients = Ingredient.all 
-        render json: ingredients
+        @ingredients = Ingredient.all 
+        render json: @ingredients, status: 200
     end
 
     def show
-        ingredient = Ingredient.find_by(id: params[:id])
-        render json: ingredient
+        @ingredient = Ingredient.find_by(id: params[:id])
+        render json: @ingredient, status: 200
     end
 
     private
