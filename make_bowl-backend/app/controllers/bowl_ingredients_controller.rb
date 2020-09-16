@@ -1,0 +1,2 @@
+class BowlIngredientsController < ApplicationController
+end
