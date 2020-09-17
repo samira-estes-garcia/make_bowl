@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+}
+
+.add {
+  width: 30%;
+  background-color: white;
+  border: none;
+  margin-top: 30%;
+  margin-left: 13%;
+}
+
+.add :hover {
+  cursor: pointer;
+}
+
+.add-img {
+  width: 65%;
+}
