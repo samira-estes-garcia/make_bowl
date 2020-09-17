@@ -22,9 +22,9 @@ getIngredients().then((json) => {
 
 function renderElement(ingredient) {
   return `  <div class="ingredients-info">
-            <p>${ingredient.name}</p>
-            <p>${ingredient.price}</p>
-            <p>${ingredient.category}</p>
+            <p>Ingredient: ${ingredient.name}</p>
+            <p>Price: $${ingredient.price.toFixed(2)}</p>
+            <p>Ingredient Type: ${ingredient.category}</p>
             </div>
             <div class="button-container">
             <button class="add"><img src="assets/add.png" class="add-img" /></button>
